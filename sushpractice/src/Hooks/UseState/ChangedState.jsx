@@ -24,7 +24,7 @@ export class ChangeState extends Component{
 }
 
 
-//Updatation using functional component
+
 
     const ChangedState = () => {
     const [state, setState] = useState("Initial State")
