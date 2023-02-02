@@ -4,7 +4,7 @@ import { Component } from 'react'
 
 // Updatation based on class component
 
-class ChangedState extends Component{
+export class ChangeState extends Component{
     constructor(props) {
         super(props);
         this.state = {text: "Initial text"}
@@ -22,15 +22,20 @@ class ChangedState extends Component{
         );
     }
 }
-export const ChangeState = () => {
+
+
+//Updatation using functional component
+    const ChangedState = () => {
     const [state, setState] = useState("Initial State")
 
-    const ChangeInState
+    const Changed = (e) => {
+        setState(e.target.value)
+    }
   return (
     <>
       <h1>State Example</h1>
       <h2>{state}</h2>
-      <input type="text" onChange={ChangeInState} />
+      <input type="text" onChange={Changed} />
     </>
   )
 }
