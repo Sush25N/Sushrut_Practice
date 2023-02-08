@@ -4,13 +4,12 @@ import UseEffects from './Hooks/UseEffect/UseEffect';
 // import IncDec from "./Hooks/UseState/IncDec"
 import ChangedState from './Hooks/UseState/ChangedState' 
 import ChangeState from './Hooks/UseState/ChangedState'
-import UseEffects from './Hooks/UseEffect/UseEffect';
 
 function App() {
   return (
     <>
       {/* <IncDec /> */}
-      <ChangedState /> <ChangeState />
+      {/* <ChangedState /> <ChangeState /> */}
       <UseEffects />
     </>
   );
